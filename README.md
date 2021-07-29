@@ -60,7 +60,7 @@ https://librosa.org/doc/latest/feature.html
 
 ## Model Training and Evaluation
 
-* The model was trained testing several sets of features, and finally selecting the best ones with Grid Search. The accuracy achieved is 0.68 and the Kappa score is 0.60. 
+* The model was trained testing several sets of features, and finally selecting the best ones with Grid Search. The accuracy achieved is 0.71 and the Kappa score is 0.64. 
 * The class that was worstly predicted is "human".
 
 

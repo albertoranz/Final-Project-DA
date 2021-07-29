@@ -1,7 +1,7 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 
-# Audio Multiclass classification.
+# Audio Multiclass Classification.
 
 *[Alberto Ranz]*
 

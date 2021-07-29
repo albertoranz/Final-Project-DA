@@ -25,48 +25,50 @@
 
 ## Project Description
 
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+This project is about a multiclass classification of audio events through machine learning methods. This project is a milestone in the process of learning how to perform data analysis with ML methods.
 
 
 ## Hypotheses / Questions
 
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+* Is it possible to classificate different audios based on their acoustic features?
+* Which kind of model would work better for this?
+* Which kind of audio features are more relevant for the classification?
+* Possible applications would be implementation in recording or audio recognition software, .
 
 
 ## Dataset
 
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+* The dataset used was extracted from the ESC-50 audio set: https://github.com/karolpiczak/ESC-50 
+* This is a collection of 2000 audio events with a 5 second duration, in wav format. The sample rate and bit depth are: 44,1 kHz - 16 bit.
+* There is class balance (400 events per class).
+* A better accuracy score could be achieved with a bigger amount of audio events.
+
 
 ## Cleaning
 
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+The data was extracted from each audio event using the Librosa library for python.
+For each audio event, a calculation of the mean, median, standard deviation and sum of the extracted arrays was calculated.
+The extracted features are: chroma stft, mfcc, rms, spectral centroid, spectral bandwidth, spectral contrast, spectral flatness, spectral roll off, poly features, tonal centroid features, zero crossing rate and autocorrelation.
+https://librosa.org/doc/latest/feature.html
 
 
 ## Analysis
 
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
-* If you used Machine Learning in your final project, describe your feature selection process.
+* The classification was tested through several methods including Gradient Boosting, Random Forest Classification, Search Grid and Neural Networks.
+* The best performing model was a Random Forest Classification with Search Grid to find the best parameters. 
+* The features were selected by observing the correlation matrix. As expected, there was big correlation between mean, median and sum values. Therefore, the median and sum values were dropped.
 
 
 ## Model Training and Evaluation
 
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
+* The model was trained testing several sets of features, and finally selecting the best ones with Grid Search. The accuracy achieved is 0.68 and the Kappa score is 0.60. 
+* The class that was worstly predicted is "human".
 
 
 ## Conclusion
 
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the questions you try to answer.
+* The results are acceptable, and would be better by either using a high level Neural Network, or by using a broader dataset.
+* The classification works fine. There is a low level of error, but considering the resources available, this is completely normal.
 
 
 ## Future Work
@@ -74,17 +76,10 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 Address any questions you were unable to answer, or any next steps or future extensions to your project.
 
 
-## Workflow
-
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
-
-
 ## Organization
 
-How did you organize your work? Did you use any tools like a trello or kanban board?
-
-What does your repository look like? Explain your folder and file structure.
+A trello board was used to organize the work
+The repo has two directories, one for the code and one for the data. The code directory includes two files, one for the feature extraction, and another for the ML models.
 
 
 ## Links

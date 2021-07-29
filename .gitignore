@@ -1,9 +1,16 @@
 
-
-\validation set sounds
-\audio
-\data extraction - copia.ipynb
-\Model - copia.ipynb
+copias/
+Images class/
+validation set sounds/
+audio/
+data extraction - copia.ipynb
+Model - copia.ipynb
+Neural Network.ipynb
+model.png
+Model Grad Boost.ipynb
+data extraction mfcc arr for NN.ipynb
+Saved models/
+val_df.csv
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows

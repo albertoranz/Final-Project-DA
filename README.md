@@ -77,7 +77,7 @@ The repo has two directories, one for the code and one for the data. The code di
 
 ## Links
 
-[Dataset](https://github.com/karolpiczak/ESC-50)
-[Repository](https://github.com/albertoranz/Final-Project-DA)  
-[Slides](https://docs.google.com/presentation/d/1P6HnTDtupBFhwozzsj4MYkXXZscxdlsit7H2P51l1wc)  
-[Trello](https://trello.com/b/5HfNwHnB/final-proyect)  
+* [Dataset](https://github.com/karolpiczak/ESC-50)
+* [Repository](https://github.com/albertoranz/Final-Project-DA)  
+* [Slides](https://docs.google.com/presentation/d/1P6HnTDtupBFhwozzsj4MYkXXZscxdlsit7H2P51l1wc)  
+* [Trello](https://trello.com/b/5HfNwHnB/final-proyect)  

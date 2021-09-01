@@ -17,7 +17,6 @@
 - [Analysis](#analysis)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
-- [Future Work](#future-work)
 - [Organization](#organization)
 - [Links](#links)
 

@@ -1,7 +1,7 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 
-# Audio Multiclass Classification.
+# Audio Multiclass Classification
 
 *[Alberto Ranz]*
 
@@ -24,7 +24,7 @@
 
 ## Project Description
 
-This project is about a multiclass classification of audio events through machine learning methods. This project is a milestone in the process of learning how to perform data analysis with ML methods.
+This project is a multiclass classification of audio events through machine learning methods. This represents a milestone in the process of learning how to perform data analysis with ML methods.
 
 
 ## Hypotheses / Questions
@@ -70,14 +70,9 @@ https://librosa.org/doc/latest/feature.html
 * The classification works fine. There is a low level of error, but considering the resources available, this is completely normal.
 
 
-## Future Work
-
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
-
-
 ## Organization
 
-A trello board was used to organize the work
+A trello board was used to organize the work.
 The repo has two directories, one for the code and one for the data. The code directory includes two files, one for the feature extraction, and another for the ML models.
 
 
